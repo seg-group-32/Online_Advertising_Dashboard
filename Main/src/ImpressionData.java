@@ -1,5 +1,5 @@
 import java.util.ArrayList;
 
-public class ImpressionData {
-	private ArrayList<ImpressionEntry> impressionList;
+public class ImpressionData extends ArrayList<ImpressionEntry> {
+
 }
