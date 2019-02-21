@@ -8,10 +8,6 @@ import java.util.Date;
  */
 public class Intepreter  {
 
-    private String impressionLog = "2015-01-01 12:01:43,5616822718609560576,Female,45-54,Medium,Shopping,0.001027";
-    private String serverLog = "2015-01-02 15:08:34,2301382543090044928,2015-01-02 15:11:56,1,No";
-    private String clickLog = "2015-01-01 12:33:20,2150395068887323648,0.000000";
-
 
     private String [] splitStringByComma (String string){
         String [] splitString = string.split(",");
@@ -81,16 +77,16 @@ public class Intepreter  {
        return null;
     }
 
-    public ClickEntry interpretClickLog() throws Exception{
-        String [] splitString = splitStringByComma(clickLog);
+    public ClickEntry interpretClickLog(String string) throws Exception{
+        String [] splitString = splitStringByComma(string);
         Date date = stringToDate(splitString[0]);
         String ID = splitString[1];
         Float clickCost = Float.parseFloat(splitString[2]);
         return new ClickEntry(date,ID,clickCost);
     }
 
-    public ServerEntry interpretServerLog() throws Exception{
-        String [] splitString = splitStringByComma(serverLog);
+    public ServerEntry interpretServerLog(String string) throws Exception{
+        String [] splitString = splitStringByComma(string);
         Date entryDate = stringToDate(splitString[0]);
         String ID = splitString[1];
         Date exitDate = stringToDate(splitString[2]);
@@ -100,8 +96,8 @@ public class Intepreter  {
         return new ServerEntry(entryDate,ID,exitDate,numPageViewed,conversion);
     }
 
-    public ImpressionEntry interpretImpressionLog () throws Exception{
-        String[] splitString = splitStringByComma(impressionLog);
+    public ImpressionEntry interpretImpressionLog (String string) throws Exception{
+        String[] splitString = splitStringByComma(string);
         Date date = stringToDate(splitString[0]);
         String ID = splitString[1];
         Gender gender = decideGender(splitString[2]);
@@ -114,28 +110,28 @@ public class Intepreter  {
     }
 
     public static void main(String[] args) throws Exception{
-       Intepreter intepreter = new Intepreter();
-       ClickEntry clickEntry = intepreter.interpretClickLog();
-
-       System.out.println(clickEntry.getID());
-       System.out.println(clickEntry.getClickCost());
-       System.out.println(clickEntry.getDateAndTime());
-        System.out.println(" ");
-        ServerEntry serverEntry = intepreter.interpretServerLog();
-        System.out.println(serverEntry.getConversion());
-        System.out.println(serverEntry.getEntryDate());
-        System.out.println(serverEntry.getExitDate());
-        System.out.println(serverEntry.getID());
-        System.out.println(serverEntry.getPagesViewed());
-        System.out.println(" ");
-        ImpressionEntry impressionEntry = intepreter.interpretImpressionLog();
-        System.out.println(impressionEntry.getAgeGroup().getName());
-        System.out.println(impressionEntry.getContext());
-        System.out.println(impressionEntry.getDateAndTime());
-        System.out.println(impressionEntry.getGender());
-        System.out.println(impressionEntry.getID());
-        System.out.println(impressionEntry.getIncome());
-        System.out.println(impressionEntry.getImpressionCost());
+//       Intepreter intepreter = new Intepreter();
+//       ClickEntry clickEntry = intepreter.interpretClickLog(// );
+//
+//       System.out.println(clickEntry.getID());
+//       System.out.println(clickEntry.getClickCost());
+//       System.out.println(clickEntry.getDateAndTime());
+//        System.out.println(" ");
+//        ServerEntry serverEntry = intepreter.interpretServerLog();
+//        System.out.println(serverEntry.getConversion());
+//        System.out.println(serverEntry.getEntryDate());
+//        System.out.println(serverEntry.getExitDate());
+//        System.out.println(serverEntry.getID());
+//        System.out.println(serverEntry.getPagesViewed());
+//        System.out.println(" ");
+//        ImpressionEntry impressionEntry = intepreter.interpretImpressionLog();
+//        System.out.println(impressionEntry.getAgeGroup().getName());
+//        System.out.println(impressionEntry.getContext());
+//        System.out.println(impressionEntry.getDateAndTime());
+//        System.out.println(impressionEntry.getGender());
+//        System.out.println(impressionEntry.getID());
+//        System.out.println(impressionEntry.getIncome());
+//        System.out.println(impressionEntry.getImpressionCost());
 
     }
 
