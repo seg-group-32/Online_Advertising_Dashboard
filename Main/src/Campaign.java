@@ -20,6 +20,7 @@ public class Campaign {
 	
 	public void loadClickData()throws Exception{
         clickData = new ClickData();
+        clickEntries.remove(0);
 		for(String s:clickEntries){
          clickData.add(intepreter.interpretClickLog(s));
         }
@@ -28,28 +29,15 @@ public class Campaign {
 	/** This method calculates the key metrics of the campaign, by instantiating all the class variables of the CampaignMetrics
 	 * instance owned by this CampaignClass. Those class variables represent the metrics of the Campaign. 
 	 */
-	private void calculateMetrics() {
+	public void calculateMetrics() {
 		metrics.calculateMetrics(this.impressionData, this.clickData, this.serverData);
 	}
 
-    public static void main(String[] args) throws Exception{
-        Campaign campaign = new Campaign();
 
-        CSVReader csvReader = new CSVReader();
-        campaign.clickEntries = csvReader.fetchInfo();
-        campaign.clickEntries.remove(0);
-
-        campaign.loadClickData();
-        for (ClickEntry clickEntry : campaign.clickData){
-            System.out.println("ID: "+clickEntry.getID()+" Click Cost: "+clickEntry.getClickCost()+" Date and Time: "+clickEntry.getDateAndTime());
-        }
-
-        campaign.loadImpressionData();
-        campaign.loadServerData();
-	}
 	
 	public void loadImpressionData () throws Exception {
 		impressionData = new ImpressionData();
+		impressionEntries.remove(0);
 		for (String s: impressionEntries){
 		    impressionData.add(intepreter.interpretImpressionLog(s));
         }
@@ -57,10 +45,37 @@ public class Campaign {
 
 	public void loadServerData() throws Exception {
         serverData = new ServerData();
+        serverEntries.remove(0);
         for (String s: serverEntries){
             serverData.add(intepreter.interpretServerLog(s));
         }
 	}
 
+    public ArrayList<String> getClickEntries() {
+        return clickEntries;
+    }
 
+    public ArrayList<String> getImpressionEntries() {
+        return impressionEntries;
+    }
+
+    public ArrayList<String> getServerEntries() {
+        return serverEntries;
+    }
+
+    public void setClickEntries(ArrayList<String> clickEntries) {
+        this.clickEntries = clickEntries;
+    }
+
+    public void setImpressionEntries(ArrayList<String> impressionEntries) {
+        this.impressionEntries = impressionEntries;
+    }
+
+    public void setServerEntries(ArrayList<String> serverEntries) {
+        this.serverEntries = serverEntries;
+    }
+
+    public CampaignMetrics getMetrics() {
+        return metrics;
+    }
 }

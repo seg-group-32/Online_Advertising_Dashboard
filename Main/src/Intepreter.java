@@ -1,4 +1,5 @@
 
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
@@ -14,10 +15,16 @@ public class Intepreter  {
         return splitString;
     }
 
-    private Date stringToDate(String stringDate)throws  Exception{
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
-        Date date = simpleDateFormat.parse(stringDate);
-        return date;
+    private Date stringToDate(String stringDate){
+        try {
+            SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            Date date = simpleDateFormat.parse(stringDate);
+            return date;
+        }
+        catch (ParseException e){
+            return null;
+        }
+
     }
 
     private boolean isConversion (String s){
@@ -109,31 +116,7 @@ public class Intepreter  {
         return new ImpressionEntry(date,ID,gender,ageGroup,income,context,impressionCost);
     }
 
-    public static void main(String[] args) throws Exception{
-//       Intepreter intepreter = new Intepreter();
-//       ClickEntry clickEntry = intepreter.interpretClickLog(// );
-//
-//       System.out.println(clickEntry.getID());
-//       System.out.println(clickEntry.getClickCost());
-//       System.out.println(clickEntry.getDateAndTime());
-//        System.out.println(" ");
-//        ServerEntry serverEntry = intepreter.interpretServerLog();
-//        System.out.println(serverEntry.getConversion());
-//        System.out.println(serverEntry.getEntryDate());
-//        System.out.println(serverEntry.getExitDate());
-//        System.out.println(serverEntry.getID());
-//        System.out.println(serverEntry.getPagesViewed());
-//        System.out.println(" ");
-//        ImpressionEntry impressionEntry = intepreter.interpretImpressionLog();
-//        System.out.println(impressionEntry.getAgeGroup().getName());
-//        System.out.println(impressionEntry.getContext());
-//        System.out.println(impressionEntry.getDateAndTime());
-//        System.out.println(impressionEntry.getGender());
-//        System.out.println(impressionEntry.getID());
-//        System.out.println(impressionEntry.getIncome());
-//        System.out.println(impressionEntry.getImpressionCost());
 
-    }
 
 
 }
