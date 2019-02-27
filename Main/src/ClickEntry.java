@@ -3,7 +3,7 @@ import java.util.Date;
 public class ClickEntry {
 	private Date dateAndTime;
 	private String ID;
-	private float clickCost;
+	private Float clickCost;
 	
 	public ClickEntry(Date dateAndTime, String ID, float clickCost) {
 		this.dateAndTime = dateAndTime;
@@ -11,7 +11,7 @@ public class ClickEntry {
 		this.clickCost = clickCost;
 	}
 
-    public float getClickCost() {
+    public Float getClickCost() {
         return clickCost;
     }
 

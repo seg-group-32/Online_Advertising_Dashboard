@@ -8,12 +8,14 @@ public class Campaign {
     private ArrayList<String> clickEntries;
     private ArrayList<String> serverEntries;
     private ArrayList<String> impressionEntries;
+    private CampaignMetrics metrics;
 	private Intepreter intepreter = new Intepreter();
 
 	public Campaign() {
 		clickData = null;
 		impressionData = null;
 		serverData = null;
+		metrics = new CampaignMetrics();
 	}
 	
 	public void loadClickData()throws Exception{
@@ -21,6 +23,13 @@ public class Campaign {
 		for(String s:clickEntries){
          clickData.add(intepreter.interpretClickLog(s));
         }
+	}
+	
+	/** This method calculates the key metrics of the campaign, by instantiating all the class variables of the CampaignMetrics
+	 * instance owned by this CampaignClass. Those class variables represent the metrics of the Campaign. 
+	 */
+	private void calculateMetrics() {
+		metrics.calculateMetrics(this.impressionData, this.clickData, this.serverData);
 	}
 
     public static void main(String[] args) throws Exception{
