@@ -25,7 +25,6 @@
   <component name="ChangeListManager">
     <list default="true" id="327a469e-de9b-4033-a146-f3134baedfe9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/src/GUI/GUI.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/Main/src/GUI/GUI.fxml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,8 +64,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main/src/Application/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+            <state relative-caret-position="153">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
               <folding>
                 <element signature="e#126#127#0" expanded="true" />
                 <element signature="e#165#166#0" expanded="true" />
@@ -252,7 +251,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551700192396" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551700235940" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -374,7 +373,7 @@
       <workItem from="1551444712936" duration="1682000" />
       <workItem from="1551449408811" duration="1595000" />
       <workItem from="1551596898932" duration="313000" />
-      <workItem from="1551699892361" duration="263000" />
+      <workItem from="1551699892361" duration="565000" />
     </task>
     <task id="LOCAL-00001" summary="Project Start">
       <created>1550745715384</created>
@@ -432,11 +431,18 @@
       <option name="project" value="LOCAL" />
       <updated>1551448934564</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Increment 1 Finished">
+      <created>1551700230364</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551700230364</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38620000" />
+    <option name="totallyTimeSpent" value="38922000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="807" extended-state="6" />
@@ -485,7 +491,8 @@
     <MESSAGE value="Part 1 finished" />
     <MESSAGE value="Part 1 finished debugged" />
     <MESSAGE value="GUI added" />
-    <option name="LAST_COMMIT_MESSAGE" value="GUI added" />
+    <MESSAGE value="Increment 1 Finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Increment 1 Finished" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -712,8 +719,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main/src/Application/Application.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="e#126#127#0" expanded="true" />
             <element signature="e#165#166#0" expanded="true" />
