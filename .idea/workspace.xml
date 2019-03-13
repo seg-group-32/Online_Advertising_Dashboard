@@ -24,11 +24,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="327a469e-de9b-4033-a146-f3134baedfe9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Main/src/Backend/CampaignChartData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Main/src/Backend/Filter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Main/Main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Main/Main.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Online_Advertising_Dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Online_Advertising_Dashboard.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +52,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Main/src/Backend/Filter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
+            <state relative-caret-position="443">
+              <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#calculateFilters#0;class#Filter#0" />
@@ -245,7 +241,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552498331314" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552498395849" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -378,7 +374,7 @@
       <workItem from="1551701732993" duration="2007000" />
       <workItem from="1551710670779" duration="2707000" />
       <workItem from="1551882667807" duration="10000" />
-      <workItem from="1552487017952" duration="10121000" />
+      <workItem from="1552487017952" duration="10394000" />
     </task>
     <task id="LOCAL-00001" summary="Project Start">
       <created>1550745715384</created>
@@ -443,15 +439,21 @@
       <option name="project" value="LOCAL" />
       <updated>1551700230364</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="filter Added">
+      <created>1552498449684</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1552498449684</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53842000" />
+    <option name="totallyTimeSpent" value="54115000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46385542" visible="true" weight="0.26180258" />
       <window_info id="Structure" order="1" sideWeight="0.53614455" side_tool="true" visible="true" weight="0.26180258" />
@@ -462,8 +464,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928468" weight="0.327451" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.490701" weight="0.2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49427754" visible="true" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.490701" visible="true" weight="0.2" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49427754" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -497,7 +499,8 @@
     <MESSAGE value="Part 1 finished debugged" />
     <MESSAGE value="GUI added" />
     <MESSAGE value="Increment 1 Finished" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increment 1 Finished" />
+    <MESSAGE value="filter Added" />
+    <option name="LAST_COMMIT_MESSAGE" value="filter Added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,7 +513,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Main/src/Backend/Filter.java</url>
-          <line>182</line>
+          <line>184</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
@@ -750,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Main/src/Backend/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="180" column="38" selection-start-line="180" selection-start-column="38" selection-end-line="180" selection-end-column="38" />
+        <state relative-caret-position="443">
+          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#calculateFilters#0;class#Filter#0" />
