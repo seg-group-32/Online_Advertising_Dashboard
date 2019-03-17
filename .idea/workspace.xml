@@ -24,7 +24,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="327a469e-de9b-4033-a146-f3134baedfe9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Main/src/Backend/Chart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/src/Backend/DateType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Main/src/Backend/MetricType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/src/Backend/Campaign.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/src/Backend/Campaign.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main/src/Backend/Filter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Main/src/Backend/Filter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Main/Backend/Campaign.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Main/Backend/Campaign.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Main/Backend/Filter.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Main/Backend/Filter.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,43 +48,49 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/CampaignChartData.java">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/Chart.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="16" selection-end-column="2" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/Filter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
+            <state relative-caret-position="125">
+              <caret line="304" selection-start-line="304" selection-end-line="304" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#calculateFilters#0;class#Filter#0" />
-                <element signature="e#3434#3442#0" expanded="true" />
-                <element signature="e#4039#4047#0" expanded="true" />
+                <element signature="method#Chart#0;class#Chart#0" />
+                <element signature="method#splitbyHour#0;class#Chart#0" />
+                <element signature="e#1023#4076#1" />
+                <element signature="method#splitByDay#0;class#Chart#0" />
+                <element signature="method#splitByWeek#0;class#Chart#0" />
+                <element signature="e#12889#12890#0" expanded="true" />
+                <element signature="e#12919#12920#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/Context.java">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/ClickData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" selection-start-line="2" selection-end-line="2" />
+            <state relative-caret-position="85">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/AgeGroup.java">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/DateType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/MetricType.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="2" selection-end-column="98" />
             </state>
           </provider>
         </entry>
@@ -85,7 +98,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Main/src/Backend/Intepreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
+            <state relative-caret-position="271">
               <caret line="116" selection-start-line="116" selection-end-line="116" />
               <folding>
                 <element signature="e#446#635#0" />
@@ -94,17 +107,67 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/ImpressionData.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/Campaign.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="-208">
+              <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#791#914#0" />
+                <element signature="e#918#1155#0" />
+                <element signature="e#1516#1783#0" />
+                <element signature="e#1676#1751#1" />
+                <element signature="e#1786#2050#0" />
+                <element signature="e#2439#2569#0" />
+                <element signature="e#2897#3028#0" />
+                <element signature="e#2897#3368#0" />
+                <element signature="e#3374#3689#0" />
+                <element signature="e#3695#4014#0" />
+                <element signature="e#4221#4583#0" />
+                <element signature="e#4365#4450#1" />
+                <element signature="e#4589#4721#0" />
+                <element signature="e#4727#4869#0" />
+                <element signature="e#4875#5002#0" />
+                <element signature="e#5401#5548#0" />
+                <element signature="e#5900#5916#0" expanded="true" />
+                <element signature="e#6085#6118#0" />
+                <element signature="e#6960#6993#0" />
+                <element signature="e#7768#7978#0" />
+                <element signature="e#8386#8478#0" />
+                <element signature="e#5573#5661#0" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/Backend/Gender.java">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/XYChart.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="149">
+              <caret line="1609" selection-start-line="1609" selection-end-line="1609" />
+              <folding>
+                <element signature="e#69802#69803#0" expanded="true" />
+                <element signature="e#69835#69846#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/collections/FXCollections.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="304" selection-start-line="304" selection-end-line="304" />
+              <folding>
+                <element signature="e#11668#11669#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/BounceType.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
               <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
@@ -113,28 +176,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/server_log.csv">
+        <entry file="file://$PROJECT_DIR$/Main/src/Backend/CampaignMetrics.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/impression_log.csv">
-          <provider selected="true" editor-type-id="LargeFileEditor">
-            <state relative-caret-position="297">
-              <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Main/src/click_log.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="49" />
+            <state relative-caret-position="-907">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="20" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -144,9 +192,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Enum" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -189,26 +237,31 @@
         <option value="$PROJECT_DIR$/Main/src/Backend/Intepreter.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/ServerData.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/ServerEntry.java" />
-        <option value="$PROJECT_DIR$/Main/src/Backend/Campaign.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/Main.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/CSVReader.java" />
         <option value="$PROJECT_DIR$/Main/src/Application/Handler.java" />
         <option value="$PROJECT_DIR$/Main/src/Application/Controller.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/CampaignChartData.java" />
         <option value="$PROJECT_DIR$/Main/src/Backend/Filter.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/Char.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/ChartData.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/DateType.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/MetricType.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/Chart.java" />
+        <option value="$PROJECT_DIR$/Main/src/Backend/Campaign.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="height" value="795" />
   </component>
   <component name="ProjectView">
     <navigator currentView="PackagesPane" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -236,12 +289,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552498395849" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552850244822" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -271,10 +325,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Filter">
+  <component name="RunManager" selected="Application.Campaign">
     <configuration name="Campaign" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Campaign" />
+      <option name="MAIN_CLASS_NAME" value="Backend.Campaign" />
       <module name="Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Chart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Backend.Chart" />
+      <module name="Main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Backend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -318,20 +391,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Main" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Campaign" />
+        <item itemvalue="Application.Chart" />
         <item itemvalue="Application.Filter" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Campaign" />
       </list>
     </recent_temporary>
   </component>
@@ -374,7 +440,9 @@
       <workItem from="1551701732993" duration="2007000" />
       <workItem from="1551710670779" duration="2707000" />
       <workItem from="1551882667807" duration="10000" />
-      <workItem from="1552487017952" duration="10394000" />
+      <workItem from="1552487017952" duration="11632000" />
+      <workItem from="1552573056545" duration="12032000" />
+      <workItem from="1552826745597" duration="23197000" />
     </task>
     <task id="LOCAL-00001" summary="Project Start">
       <created>1550745715384</created>
@@ -450,22 +518,23 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54115000" />
+    <option name="totallyTimeSpent" value="90582000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="795" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.46385542" visible="true" weight="0.26180258" />
-      <window_info id="Structure" order="1" sideWeight="0.53614455" side_tool="true" visible="true" weight="0.26180258" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4609929" visible="true" weight="0.2732475" />
+      <window_info id="Structure" order="1" sideWeight="0.53900707" side_tool="true" visible="true" weight="0.2732475" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928468" weight="0.327451" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.490701" visible="true" weight="0.2" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49427754" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.49928468" weight="0.32716927" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.490701" weight="0.22617353" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49427754" visible="true" weight="0.39829302" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -474,7 +543,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.509299" side_tool="true" weight="0.3987952" />
-      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49642345" weight="0.62650603" />
+      <window_info anchor="bottom" id="Messages" order="12" sideWeight="0.49642345" weight="0.62588906" />
       <window_info anchor="bottom" id="TeamCity" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -511,25 +580,10 @@
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Main/src/Backend/Filter.java</url>
-          <line>184</line>
-          <properties />
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Main/src/dsdasdas.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/dsdasdas.form" />
-    <entry file="file://$PROJECT_DIR$/Main/src/Context.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/Gender.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/FileReader.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/CSVReader.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/ImpressionEntry.java" />
-    <entry file="file://$PROJECT_DIR$/Main/src/ServerData.java" />
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/text/DateFormat.java" />
     <entry file="file://$PROJECT_DIR$/Main/src/Income.java" />
     <entry file="file://$PROJECT_DIR$/Main/src/GUI/logo.png">
       <provider selected="true" editor-type-id="images" />
@@ -557,13 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="16" selection-start-column="16" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ImpressionEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -623,47 +670,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/CampaignMetrics.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" column="9" lean-forward="true" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/src/Backend/CSVReader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Campaign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="49" column="41" selection-start-line="49" selection-start-column="41" selection-end-line="49" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ServerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ClickData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -678,69 +688,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ServerEntry.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main/src/Backend/CampaignChartData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="16" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/AgeGroup.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Gender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ImpressionData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/server_log.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/impression_log.csv">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state relative-caret-position="297">
-          <caret line="50" selection-start-line="50" selection-end-line="50" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/click_log.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Intepreter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="116" selection-start-line="116" selection-end-line="116" />
-          <folding>
-            <element signature="e#446#635#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -751,15 +702,212 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ServerEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ImpressionEntry.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ImpressionData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Gender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/server_log.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1955">
+          <caret line="115" selection-start-line="115" selection-end-line="116" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/impression_log.csv">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="48144">
+          <caret line="2832" selection-start-line="2832" selection-end-line="2833" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/click_log.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2040">
+          <caret line="120" selection-start-line="120" selection-end-line="120" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Main/src/Backend/Filter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="179" column="16" selection-start-line="179" selection-start-column="16" selection-end-line="179" selection-end-column="16" />
+        <state relative-caret-position="1907">
+          <caret line="129" selection-start-line="129" selection-end-line="129" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#calculateFilters#0;class#Filter#0" />
-            <element signature="e#3434#3442#0" expanded="true" />
-            <element signature="e#4039#4047#0" expanded="true" />
+            <element signature="e#3259#3267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Char.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/AgeGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ServerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/DAt.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ClickData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/CampaignMetrics.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-907">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="20" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Intepreter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="116" selection-start-line="116" selection-end-line="116" />
+          <folding>
+            <element signature="e#446#635#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/DateType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/ChartData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/MetricType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="2" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/BounceType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Chart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+          <folding>
+            <element signature="method#Chart#0;class#Chart#0" />
+            <element signature="method#splitbyHour#0;class#Chart#0" />
+            <element signature="e#1023#4076#1" />
+            <element signature="method#splitByDay#0;class#Chart#0" />
+            <element signature="method#splitByWeek#0;class#Chart#0" />
+            <element signature="e#12889#12890#0" expanded="true" />
+            <element signature="e#12919#12920#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/collections/FXCollections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="304" selection-start-line="304" selection-end-line="304" />
+          <folding>
+            <element signature="e#11668#11669#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/javafx-src.zip!/javafx/scene/chart/XYChart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="1609" selection-start-line="1609" selection-end-line="1609" />
+          <folding>
+            <element signature="e#69802#69803#0" expanded="true" />
+            <element signature="e#69835#69846#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Main/src/Backend/Campaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-208">
+          <caret line="219" column="35" selection-start-line="219" selection-start-column="35" selection-end-line="219" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#791#914#0" />
+            <element signature="e#918#1155#0" />
+            <element signature="e#1516#1783#0" />
+            <element signature="e#1676#1751#1" />
+            <element signature="e#1786#2050#0" />
+            <element signature="e#2439#2569#0" />
+            <element signature="e#2897#3028#0" />
+            <element signature="e#2897#3368#0" />
+            <element signature="e#3374#3689#0" />
+            <element signature="e#3695#4014#0" />
+            <element signature="e#4221#4583#0" />
+            <element signature="e#4365#4450#1" />
+            <element signature="e#4589#4721#0" />
+            <element signature="e#4727#4869#0" />
+            <element signature="e#4875#5002#0" />
+            <element signature="e#5401#5548#0" />
+            <element signature="e#5900#5916#0" expanded="true" />
+            <element signature="e#6085#6118#0" />
+            <element signature="e#6960#6993#0" />
+            <element signature="e#7768#7978#0" />
+            <element signature="e#8386#8478#0" />
+            <element signature="e#5573#5661#0" />
           </folding>
         </state>
       </provider>

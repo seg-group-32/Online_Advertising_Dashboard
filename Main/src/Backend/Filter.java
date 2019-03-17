@@ -16,9 +16,6 @@ public class Filter {
 
     private ArrayList<ImpressionData> filters;
 
-    private ClickData tmpClickData = new ClickData();
-    private ImpressionData tmpImpressionData = new ImpressionData();
-    private ServerData tmpServerData = new ServerData();
 
 
 
@@ -115,12 +112,22 @@ public class Filter {
                 if (i.getDateAndTime().after(endDate) || i.getDateAndTime().before(startDate)) add = false;
             }
 
+            if (startDate != null && endDate == null) {
+                if (i.getDateAndTime().before(startDate)) add = false;
+            }
+
+            if (startDate == null && endDate != null) {
+                if (i.getDateAndTime().after(endDate)) add = false;
+            }
+
             if (add) copy.add(i);
         }
       return copy;
     }
 
     public ClickData filterClicks (ImpressionData filteredImpressions, Date startDate, Date endDate){
+
+
         ClickData clickCopy = new ClickData();
         HashSet<String> IDset = new HashSet<String>();
 
@@ -131,7 +138,11 @@ public class Filter {
 
         for (ClickEntry c : clickData) {
             if (IDset.contains(c.getID())) {
-                if (c.getDateAndTime().before(endDate) && c.getDateAndTime().after(startDate)) clickCopy.add(c);
+                if (startDate != null && endDate != null) {
+                    if (c.getDateAndTime().before(endDate) && c.getDateAndTime().after(startDate)) clickCopy.add(c);
+                } else {
+                    clickCopy.add(c);
+                }
             }
         }
 
@@ -149,12 +160,19 @@ public class Filter {
 
         for (ServerEntry s : serverData) {
             if (IDset.contains(s.getID())) {
-                if (s.getEntryDate().after(startDate) && s.getEntryDate().before(endDate)) serverCopy.add(s);
+                if (startDate != null && endDate != null) {
+                    if (s.getEntryDate().after(startDate) && s.getEntryDate().before(endDate)) serverCopy.add(s);
+                } else {
+                    serverCopy.add(s);
+                }
             }
         }
 
         return serverCopy;
     }
+
+
+
 
 
 
@@ -177,14 +195,14 @@ public class Filter {
             booleans[i] = true;
         }
 
-        booleans[1] = false;
+        booleans[05] = false;
 
         Date startDate = new Date(113,12,31,1,1,1);
         Date endDate = new Date(118,11,31,1,1,1);
 
-       ImpressionData filteredData = filter.calculateFilters(booleans,startDate,endDate);
-       ClickData filteredClickData = filter.filterClicks(filteredData,startDate,endDate);
-       ServerData filteredServerData = filter.filterServer(filteredClickData,startDate,endDate);
+       ImpressionData filteredData = filter.calculateFilters(booleans,null,null);
+       ClickData filteredClickData = filter.filterClicks(filteredData,null,null);
+       ServerData filteredServerData = filter.filterServer(filteredClickData,null,null);
         System.out.println(filteredData.size());
         System.out.println(filteredClickData.size());
         System.out.println(filteredServerData.size());
